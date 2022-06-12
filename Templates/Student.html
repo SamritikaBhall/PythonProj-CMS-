@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{%block body%}
+<div class="Container fluid my-4">
+    <img src="/static/Students1.jpg" class="d-block w-100" alt="...">
+</div>
+<div class= "container">
+    <h1 class= "text-centre">Students Form</h1>
+    <form method="Post" action="/Student>
+        <div class="mb-3">
+            <label for="Quantity" class="form-label">Stu_id</label>
+            <input type="number" class="form-control" id="quantity" name="Student Id" >
+         </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Stu_Fname</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="First name">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Stu_Lname</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Last name">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Stu_email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Stu_Pass</label>
+            <input type="text" class="form-control" id="text" name="text" placeholder="password">
+        </div>   
+        <div class="mb-3">
+            <label for="birthdaytime" class="form-label">Stu_dob</label>
+            <input type="datetime-local" class="form-control" id="birthdaytime" name="birthdaytime">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Stu_grade</label>
+            <input type="text" class="form-control" id="text" name="text" placeholder="Grades">
+        </div>
+        <div class="mb-3">
+            <label for="Quantity" class="form-label">Stu_marks</label>
+            <input type="number" class="form-control" id="quantity" name="quantity" min="0" max="100">
+        </div>
+        <div class="mb-3">
+            <label for="floatingSelect">gender</label>
+            <select class="form-select" id="floatingSelect" aria-label="Choose Your Gender">
+                <option selected>Select gender</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit">
+
+    
+    </form>
+</div>
+{% endblock body%}
